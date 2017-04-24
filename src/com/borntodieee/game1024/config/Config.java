@@ -43,7 +43,7 @@ public class Config extends Application {
         super.onCreate();
         mSp = getSharedPreferences(SP_HIGH_SCROE, 0);
         mGameLines = mSp.getInt(KEY_GAME_LINES, 4);
-        mGameGoal = mSp.getInt(KEY_GAME_GOAL, 2048);
+        mGameGoal = mSp.getInt(KEY_GAME_GOAL, 1024);
         mItemSize = 0;
     }
 }

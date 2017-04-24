@@ -16,8 +16,7 @@ public class GameItem extends FrameLayout {
     private int mCardShowNum;
     // 数字Title
     private TextView mTvNum;
-    // 数字Title LayoutParams
-    private LayoutParams mParams;
+
 
     public GameItem(Context context, int cardShowNum) {
         super(context);
@@ -46,7 +45,8 @@ public class GameItem extends FrameLayout {
         TextPaint tp = mTvNum.getPaint();
         tp.setFakeBoldText(true);
         mTvNum.setGravity(Gravity.CENTER);
-        mParams = new LayoutParams(LayoutParams.MATCH_PARENT,
+        // 数字Title LayoutParams
+        LayoutParams mParams = new LayoutParams(LayoutParams.MATCH_PARENT,
                 LayoutParams.MATCH_PARENT);
         mParams.setMargins(5, 5, 5, 5);
         addView(mTvNum, mParams);

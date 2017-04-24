@@ -22,24 +22,27 @@
                 android:background="@drawable/orange_button"
                 android:gravity="center"
                 android:padding="3dp"
-                android:text="2048" />
-
+                android:text="1024"
+                android:textSize="40sp" />
         </LinearLayout>
 
         <RelativeLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/score_title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
+                android:layout_margin="5dp"
                 android:background="@drawable/gray_button"
                 android:gravity="center"
-                android:text="Scroe"/>
+                android:text="@string/score"
+                android:textSize="25sp" />
 
             <TextView
                 android:id="@+id/scroe"
@@ -47,25 +50,30 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/score_title"
                 android:layout_centerHorizontal="true"
+                android:layout_margin="5dp"
                 android:background="@drawable/light_orange_button"
                 android:gravity="center"
-                android:text="10000"/>
+                android:text="10000"
+                android:textSize="15sp" />
         </RelativeLayout>
 
         <RelativeLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/record_title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
+                android:layout_margin="5dp"
                 android:background="@drawable/gray_button"
                 android:gravity="center"
-                android:text="Record"/>
+                android:text="@string/record"
+                android:textSize="25sp" />
 
             <TextView
                 android:id="@+id/record"
@@ -73,9 +81,11 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/record_title"
                 android:layout_centerHorizontal="true"
+                android:layout_margin="5dp"
                 android:background="@drawable/light_orange_button"
                 android:gravity="center"
-                android:text="20000" />
+                android:text="20000"
+                android:textSize="15sp" />
         </RelativeLayout>
     </LinearLayout>
 
@@ -95,18 +105,19 @@
         style="?android:attr/buttonBarStyle"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_margin="3dp"
         android:layout_weight="1"
-        android:gravity="center" >
+        android:gravity="center"
+        android:padding="3dp">
 
         <Button
             android:id="@+id/btn_revert"
             style="?android:attr/buttonBarButtonStyle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_margin="3dp"
             android:layout_weight="1"
             android:background="@drawable/blue_button"
-            android:text="Revert"
+            android:text="@string/revert"
             android:textColor="@android:color/black" />
 
         <Button
@@ -114,9 +125,10 @@
             style="?android:attr/buttonBarButtonStyle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_margin="3dp"
             android:layout_weight="1"
             android:background="@drawable/blue_button"
-            android:text="Restart"
+            android:text="@string/restart"
             android:textColor="@android:color/black" />
 
         <Button
@@ -124,9 +136,10 @@
             style="?android:attr/buttonBarButtonStyle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_margin="3dp"
             android:layout_weight="1"
             android:background="@drawable/blue_button"
-            android:text="Options"
+            android:text="@string/options"
             android:textColor="@android:color/black" />
     </LinearLayout>
 
